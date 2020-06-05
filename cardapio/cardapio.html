@@ -1,0 +1,25 @@
+
+
+    <script>
+        function exibeCardapio(){
+            document.write("<ol><li>Refrigerante</li><li>Suco</li><li>Água</li></ol>");
+  }
+
+  function escolheProduto(){
+      var produtoEscolhido = parseInt(prompt("Para escolher uma bebida, digite um número correspondente ao item desejado."));
+
+      if(produtoEscolhido == 1)
+      document.write("Você escolheu um refrigerante.");
+      else if(produtoEscolhido == 2)
+      document.write("Você escolheu um suco.");
+      else if(produtoEscolhido == 3)
+      document.write("Você escolheu um suco.");
+      else
+      document.write("Produto indisponível.")
+  }
+
+  exibeCardapio();
+  setTimeout(function() {escolheProduto();}, 0100);
+
+
+    </script>

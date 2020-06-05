@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+
+
+
+    function calculaValorImposto() {
+        var nomePizza = prompt("Qual é o nome da pizza?");
+        var pizzaCusto = parseInt(prompt("Qual foi o custo de produção da pizza " + nomePizza + "?"));
+        var pizzaVendida = parseInt(prompt("Qual é o valor de venda da pizza " + nomePizza + "?"));
+        var imposto = pizzaVendida * 0.089;
+        var lucro = pizzaVendida - pizzaCusto - imposto;
+        document.write("A pizza de " + nomePizza + " gera um lucro de R$" + lucro);
+  
+    }
+    calculaValorImposto();
+
+</script>

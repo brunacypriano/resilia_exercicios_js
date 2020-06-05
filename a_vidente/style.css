@@ -1,0 +1,20 @@
+body{
+    width: 100%;
+    background: url("./790.jpg");
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: middle;
+    align-items: center;
+}
+
+button{
+    color: mediumvioletred;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.8;
+}

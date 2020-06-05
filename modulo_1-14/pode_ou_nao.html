@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+function verificaPermissaoDirigir(idadeUsuario, idadeMinimaBeber, idadeMinimaDirigir) {
+
+        if(idadeUsuario  >= idadeMinimaBeber && idadeUsuario >= idadeMinimaDirigir)
+    document.write("Você tem idade suficiente para beber e dirigir nesse país. Mas lembre-se: se dirigir, não beba.");
+
+    else if((idadeUsuario < idadeMinimaBeber) && (idadeUsuario >= idadeMinimaDirigir))
+        document.write("Neste país você pode não pode beber mas pode dirigir.");
+
+    else if((idadeUsuario < idadeMinimaDirigir) && (idadeUsuario >= idadeMinimaBeber))
+        document.write("Neste país você pode pode beber mas não pode dirigir.");
+
+    else
+    document.write("Você ainda não pode dirigir e nem beber neste país.");
+}
+
+var idadeMinimaDirigir = parseInt(prompt("Insira a idade mínima para dirigir no país desejado"));
+
+var idadeMinimaBeber = parseInt(prompt("Insira a idade mínima para beber neste país"));
+
+var idadeUsuario = parseInt(prompt("Insira sua idade"));
+
+
+verificaPermissaoDirigir (idadeUsuario, idadeMinimaBeber, idadeMinimaDirigir);
+</script>

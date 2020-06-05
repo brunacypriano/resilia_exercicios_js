@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+function dobraEDivide(){
+var num = parseInt(prompt("escolha um número"));
+var dobro = num * 2;
+var metade = num / 2;
+document.write("O dobro de " + num + " é " + dobro + " e a metade é " + metade + ".")
+ 
+}
+
+function saudacaoUsuario(){
+    var user = prompt("Qual é o seu nome?");
+    alert("Olá, " + user + "! Tudo bem?");
+}
+function rodaPrograma(){
+
+saudacaoUsuario();
+dobraEDivide();
+}
+
+rodaPrograma();
+</script>
